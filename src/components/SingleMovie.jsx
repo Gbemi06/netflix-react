@@ -28,7 +28,7 @@ class SingleMovie extends Component {
       const response = await fetch(COMMENTS_URL + movieID, {
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTUwNmRlY2RhMzE2MzAwMTVkNTEyM2YiLCJpYXQiOjE2MzI2NjA5NzIsImV4cCI6MTYzMzg3MDU3Mn0.vzSXzuRnbhUs7NjBPeeIiCBg6REuTwnoXE-R7Y-zU9Y",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZhNzAyYTgyZWExZDAwMTViYjA0N2MiLCJpYXQiOjE2NDQ0OTQyNjQsImV4cCI6MTY0NTcwMzg2NH0.mgAoL0zUYTDkZNceJdJtOUy833-NlEt_nbxu3yqMiPs",
         },
       });
       if (response.ok) {
@@ -53,7 +53,7 @@ class SingleMovie extends Component {
         body: JSON.stringify(this.state.newComment),
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTUwNmRlY2RhMzE2MzAwMTVkNTEyM2YiLCJpYXQiOjE2MzI2NjA5NzIsImV4cCI6MTYzMzg3MDU3Mn0.vzSXzuRnbhUs7NjBPeeIiCBg6REuTwnoXE-R7Y-zU9Y",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZhNzAyYTgyZWExZDAwMTViYjA0N2MiLCJpYXQiOjE2NDQ0OTQyNjQsImV4cCI6MTY0NTcwMzg2NH0.mgAoL0zUYTDkZNceJdJtOUy833-NlEt_nbxu3yqMiPs",
           "Content-Type": "application/json",
         },
       });
