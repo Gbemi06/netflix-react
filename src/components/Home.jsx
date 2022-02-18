@@ -3,6 +3,7 @@ import { Container, Alert, Dropdown } from "react-bootstrap";
 import MyNavbar from "./MyNavbar";
 import MyFooter from "./MyFooter";
 import MovieList from "./MovieList";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {
@@ -90,7 +91,9 @@ class Home extends Component {
         <Container fluid className="px-4">
           <div className="d-flex justify-content-between">
             <div className="d-flex">
-              <h2 className="mb-4">TV Shows</h2>
+              <Link to={"/tv-shows"}>
+                <h2 className="mb-4">TV Shows</h2>
+              </Link>
               <div className="ml-4 mt-1">
                 <Dropdown>
                   <Dropdown.Toggle
